@@ -25,60 +25,92 @@
     <header>
       <h1 class="sr-only">Chat App Illustration</h1>
     </header>
+    <div class="block__bg"></div>
     <main class="main">
       <section class="cellphone">
         <div class="cellphone__screen">
+          <div class="screen-space"></div>
           <div class="user">
             <span class="user__button button-return">
-              <i class="fas fa-angle-left"></i>
+              <i class="fas fa-angle-left button-icon"></i>
             </span>
             <div class="user__container">
               <img src="assets/images/avatar.jpg" alt="" class="user-avatar" />
-              <h2 class="user-title">Samuel Green</h2>
-              <p class="user-status">Available to Walk</p>
-            </div>
-            <user__button class="button-options"></user__button>
-          </div>
-          <div class="message__log">
-            <div class="message__log-in">
-              That sounds great. I’d be <br />
-              happy to discuss more.
-            </div>
-            <div class="message__log-in">
-              Could you send over some <br />
-              pictures of your dog, please?
-            </div>
-            <div class="message__log-out">
-              <div class="messages__log-img">
-                <div class="message-img">
-                  <img src="assets/images/dog-image-1.jpg" alt="" />
-                </div>
-                <div class="message-img">
-                  <img src="assets/images/dog-image-2.jpg" alt="" />
-                </div>
-                <div class="message-img">
-                  <img src="assets/images/dog-image-3.jpg" alt="" />
-                </div>
+              <div class="user__container-data">
+                <h2 class="user-title">Samuel Green</h2>
+                <p class="user-status">Available to Walk</p>
               </div>
             </div>
-            <div class="message__log-out">
-              Here are a few pictures. She’s <br />
-              a happy girl!
+            <div class="user__button button-setings">
+              <i class="fas fa-ellipsis-v button-icon"></i>
             </div>
-            <div class="message__log-out">Can you make it?</div>
-            <div class="message__log-in">
-              She looks so happy! The time <br />
-              we discussed works. How <br />
-              long shall I take her out for?
+          </div>
+          <div class="messages__log">
+            <div class="message__log-in message">
+              <p>
+                That sounds great. I’d be <br />
+                happy to discuss more.
+              </p>
             </div>
-            <div class="message__log-in">30 minute walk $29</div>
-            <div class="message__log-in">1 hour walk $49</div>
+            <div class="message__log-in message">
+              <p>
+                Could you send over some <br />
+                pictures of your dog, please?
+              </p>
+            </div>
+            <div class="message__log-out message images">
+              <div class="messages__log-img">
+                <img
+                  class="log-img"
+                  src="assets/images/dog-image-1.jpg"
+                  alt=""
+                />
+                <img
+                  class="log-img"
+                  src="assets/images/dog-image-2.jpg"
+                  alt=""
+                />
+                <img
+                  class="log-img"
+                  src="assets/images/dog-image-3.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="message__log-out message">
+              <p>
+                Here are a few pictures. She’s <br />
+                a happy girl!
+              </p>
+            </div>
+            <div class="message__log-out message">
+              <p>Can you make it?</p>
+            </div>
+            <div class="message__log-in message">
+              <p>
+                She looks so happy! The time <br />
+                we discussed works. How <br />
+                long shall I take her out for?
+              </p>
+            </div>
+            <div class="message__log-in message button-option">
+              <i class="far fa-circle button-icon"></i>
+              <p>30 minute walk</p>
+              <p class="highlight">$29</p>
+            </div>
+            <div class="message__log-in message button-option">
+              <i class="far fa-circle button-icon"></i>
+              <p>1 hour walk</p>
+              <p class="highlight">$49</p>
+            </div>
           </div>
           <div class="message__input">
             <div class="message__input-box">
-              <div class="message-text">Type a message…</div>
+              <div>
+                <p class="message-text">Type a message…</p>
+              </div>
               <div class="message-button">
-                <i class="fas fa-angle-right"></i>
+                <i class="fas fa-angle-right button-icon"></i>
               </div>
             </div>
           </div>
