@@ -104,7 +104,7 @@ body {
 
 .cellphone {
   margin: auto;
-  margin-top: 20%;
+  margin-top: 10%;
   width: 15rem;
   height: fit-content;
   padding: 0.4rem;
@@ -318,11 +318,12 @@ body {
 /* Footer */
 
 footer {
+  display: none;
   background: var(--background-footer);
   width: 100%;
   text-align: center;
   padding: 0 4rem;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -341,8 +342,8 @@ footer {
     left: -22rem;
   }
 
-  .cellphone {
-    margin-top: 20%;
+  .text__container {
+    margin-bottom: 2rem;
   }
 }
 
@@ -360,7 +361,7 @@ footer {
   /*  */
 
   .cellphone {
-    margin-top: 15%;
+    margin-top: 10%;
     width: 19rem;
     padding: 0.5rem;
   }
@@ -446,16 +447,18 @@ footer {
     font-size: 1.12rem;
   }
 
-  /*  */
+  footer {
+    display: block;
+  }
 }
 
 /* Large screen device */
 
 @media screen and (min-width: 1024px) {
   .main {
-    /* max-width: 1024px; */
+    max-width: 1024px;
     margin: auto;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -465,130 +468,20 @@ footer {
   .text__container {
     display: block;
     margin: auto;
-  }
-
-  .block__bg {
-    width: 45rem;
-    height: 65rem;
-    left: -23rem;
-  }
-
-  /*  */
-
-  .cellphone {
-    width: 25rem;
-    margin: auto;
-    padding: 0.5rem;
-  }
-
-  .screen-space {
-    top: -0.5rem;
-    width: 52%;
-    height: 1.7rem;
-  }
-
-  .user {
-    height: 6.5rem;
-  }
-
-  .user-avatar {
-    width: 15%;
-  }
-
-  .user-title {
-    font-size: 1.2rem;
-  }
-
-  .user-status {
-    font-size: 0.8rem;
-  }
-
-  /* Messages */
-
-  .message {
-    font-size: 0.9rem;
-    border-radius: 0.7rem;
-    padding: 0.68rem;
-  }
-
-  .message__log-out {
-    border-end-end-radius: 0.4rem;
-  }
-
-  .message__log-in {
-    border-end-start-radius: 0.4rem;
-  }
-
-  .highlight {
-    font-size: 1.4rem;
-  }
-
-  .message__log-in {
-    width: 61%;
-  }
-
-  .log-img {
-    width: 23%;
-  }
-
-  /* Send button */
-
-  .message__input {
-    padding: 0.41rem;
-  }
-
-  .message__input-box {
-    padding: 0.35rem;
-  }
-
-  .message-text {
-    font-size: 1rem;
-  }
-
-  /* Buttons */
-
-  .button-setings {
-    font-size: 1.2rem;
-  }
-
-  .button-return {
-    font-size: 1.5rem;
-  }
-
-  .message-button {
-    padding: 0.5rem 0.8rem;
-  }
-
-  .button-option {
-    width: 72%;
-  }
-
-  .message-button .button-icon {
-    font-size: 1.4rem;
-  }
-
-  /* Text */
-
-  .text__container {
     text-align: left;
   }
 
-  .text__container-title {
-    font-size: 2.8rem;
-  }
-
-  .text__container-info {
-    width: 35rem;
-    font-size: 1.28rem;
-  }
-
-  /*  */
-}
-
-@media screen and (min-width: 1440px) {
   .block__bg {
     width: 45rem;
-    height: 55rem;
-    left: -8rem;
+    height: 45rem;
+    left: -23rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .block__bg {
+    width: 35rem;
+    height: 40rem;
+    left: -6rem;
   }
 }
