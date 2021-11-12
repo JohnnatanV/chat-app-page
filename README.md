@@ -25,7 +25,7 @@ Users should be able to:
 
 ![Mobile](./screenshots/mobile.png)
 ![Tablet](./screenshots/tablet.png)
-![Desktop](./screenshots/desktop.png)
+![desktop](./screenshots/desktop.png)
 
 ### Links
 
