@@ -120,7 +120,7 @@ body {
 
 .screen-space {
   position: absolute;
-  top: 0;
+  top: -0.3rem;
   left: 50%;
   transform: translateX(-50%);
   background-color: white;
@@ -303,7 +303,7 @@ body {
 }
 
 .text__container-title {
-  font-size: 2.1rem;
+  font-size: 2rem;
   font-weight: var(--medium-weight);
   color: var(--main-heading);
 }
@@ -356,12 +356,105 @@ footer {
   .text__container-info {
     width: 24rem;
   }
+
+  /*  */
+
+  .cellphone {
+    margin-top: 15%;
+    width: 19rem;
+    padding: 0.5rem;
+  }
+
+  .screen-space {
+    top: -0.5rem;
+    width: 50%;
+    height: 1.7rem;
+  }
+
+  .user {
+    height: 5.4rem;
+  }
+
+  .user__container {
+    align-items: center;
+  }
+
+  .user-avatar {
+    width: 19%;
+  }
+
+  .user-title {
+    font-size: 1rem;
+  }
+
+  .user-status {
+    font-size: 0.68rem;
+  }
+
+  /* Messages */
+
+  .message {
+    font-size: 0.7rem;
+    border-radius: 0.4rem;
+    padding: 0.52rem;
+  }
+
+  .highlight {
+    font-size: 1.02rem;
+  }
+
+  .message__log-in {
+    width: 62%;
+  }
+
+  .log-img {
+    width: 24%;
+  }
+
+  /* Send button */
+
+  .message__input {
+    padding: 0.41rem;
+  }
+
+  .message__input-box {
+    padding: 0.35rem;
+  }
+
+  .message-text {
+    font-size: 0.7rem;
+  }
+
+  /* Buttons */
+
+  .button-setings {
+    font-size: 0.75rem;
+  }
+
+  .message-button {
+    padding: 0.3rem 0.6rem;
+  }
+
+  /* Text */
+
+  .text__container-title {
+    font-size: 2.6rem;
+  }
+
+  .text__container-info {
+    width: 35rem;
+    font-size: 1.12rem;
+  }
+
+  /*  */
 }
 
-/* Large screen device - 1440px */
+/* Large screen device */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .main {
+    /* max-width: 1024px; */
+    margin: auto;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -375,7 +468,126 @@ footer {
   }
 
   .block__bg {
-    width: 50rem;
+    width: 45rem;
+    height: 65rem;
+    left: -23rem;
+  }
+
+  /*  */
+
+  .cellphone {
+    width: 25rem;
+    margin: auto;
+    padding: 0.5rem;
+  }
+
+  .screen-space {
+    top: -0.5rem;
+    width: 52%;
+    height: 1.7rem;
+  }
+
+  .user {
+    height: 6.5rem;
+  }
+
+  .user-avatar {
+    width: 15%;
+  }
+
+  .user-title {
+    font-size: 1.2rem;
+  }
+
+  .user-status {
+    font-size: 0.8rem;
+  }
+
+  /* Messages */
+
+  .message {
+    font-size: 0.9rem;
+    border-radius: 0.7rem;
+    padding: 0.68rem;
+  }
+
+  .message__log-out {
+    border-end-end-radius: 0.4rem;
+  }
+
+  .message__log-in {
+    border-end-start-radius: 0.4rem;
+  }
+
+  .highlight {
+    font-size: 1.4rem;
+  }
+
+  .message__log-in {
+    width: 61%;
+  }
+
+  .log-img {
+    width: 23%;
+  }
+
+  /* Send button */
+
+  .message__input {
+    padding: 0.41rem;
+  }
+
+  .message__input-box {
+    padding: 0.35rem;
+  }
+
+  .message-text {
+    font-size: 1rem;
+  }
+
+  /* Buttons */
+
+  .button-setings {
+    font-size: 1.2rem;
+  }
+
+  .button-return {
+    font-size: 1.5rem;
+  }
+
+  .message-button {
+    padding: 0.5rem 0.8rem;
+  }
+
+  .button-option {
+    width: 72%;
+  }
+
+  .message-button .button-icon {
+    font-size: 1.4rem;
+  }
+
+  /* Text */
+
+  .text__container {
+    text-align: left;
+  }
+
+  .text__container-title {
+    font-size: 2.8rem;
+  }
+
+  .text__container-info {
+    width: 35rem;
+    font-size: 1.28rem;
+  }
+
+  /*  */
+}
+
+@media screen and (min-width: 1440px) {
+  .block__bg {
+    width: 45rem;
     height: 55rem;
     left: -8rem;
   }
