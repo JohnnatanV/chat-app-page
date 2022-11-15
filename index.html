@@ -14,110 +14,112 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- Fontawesome Icon -->
-    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- BOOTSTRAP -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BOOTSTRAP ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
 
     <title>Frontend Mentor Chat App</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <header>
-      <h1 class="sr-only">Chat App Illustration</h1>
-    </header>
-    <div class="block__bg"></div>
-    <main class="main">
-      <section class="cellphone">
-        <div class="cellphone__screen">
-          <div class="screen-space"></div>
-          <div class="user">
-            <span class="user__button button-return">
-              <i class="fas fa-angle-left button-icon"></i>
-            </span>
-            <div class="user__container">
-              <img src="assets/images/avatar.jpg" alt="" class="user-avatar" />
-              <div class="user__container-data">
-                <h2 class="user-title">Samuel Green</h2>
-                <p class="user-status">Available to Walk</p>
-              </div>
-            </div>
-            <div class="user__button button-setings">
-              <i class="fas fa-ellipsis-v button-icon"></i>
-            </div>
+    <section class="cellphone">
+      <div class="contact container d-flex justify-content-between">
+        <div class="white-block"></div>
+        <div class="d-flex align-items-center gap-1">
+          <span class="return">
+            <i class="bi bi-chevron-compact-left"></i>
+          </span>
+          <div class="avatar">
+            <img src="assets/images/avatar.jpg" alt="avatar image" />
           </div>
-          <div class="messages__log">
-            <div class="message__log-in message">
-              <p>
-                That sounds great. I’d be <br />
-                happy to discuss more.
-              </p>
-            </div>
-            <div class="message__log-in message">
-              <p>
-                Could you send over some <br />
-                pictures of your dog, please?
-              </p>
-            </div>
-            <div class="message__log-out message images">
-              <div class="messages__log-img">
-                <img
-                  class="log-img"
-                  src="assets/images/dog-image-1.jpg"
-                  alt=""
-                />
-                <img
-                  class="log-img"
-                  src="assets/images/dog-image-2.jpg"
-                  alt=""
-                />
-                <img
-                  class="log-img"
-                  src="assets/images/dog-image-3.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="message__log-out message">
-              <p>
-                Here are a few pictures. She’s <br />
-                a happy girl!
-              </p>
-            </div>
-            <div class="message__log-out message">
-              <p>Can you make it?</p>
-            </div>
-            <div class="message__log-in message">
-              <p>
-                She looks so happy! The time <br />
-                we discussed works. How <br />
-                long shall I take her out for?
-              </p>
-            </div>
-            <div class="message__log-in message button-option">
-              <i class="far fa-circle button-icon"></i>
-              <p>30 minute walk</p>
-              <p class="highlight">$29</p>
-            </div>
-            <div class="message__log-in message button-option">
-              <i class="far fa-circle button-icon"></i>
-              <p>1 hour walk</p>
-              <p class="highlight">$49</p>
-            </div>
-          </div>
-          <div class="message__input">
-            <div class="message__input-box">
-              <div>
-                <p class="message-text">Type a message…</p>
-              </div>
-              <div class="message-button">
-                <i class="fas fa-angle-right button-icon"></i>
-              </div>
-            </div>
+          <div
+            class="user-data d-flex flex-column align-items-start justify-content-center"
+          >
+            <h2 class="title">Samuel Green</h2>
+            <p class="status">Available to Walk</p>
           </div>
         </div>
-      </section>
+        <div class="setings col-auto">
+          <i class="bi bi-three-dots-vertical"></i>
+        </div>
+      </div>
+      <div class="messages__log">
+        <div class="message__log-in message">
+          <p>
+            That sounds great. I’d be <br />
+            happy to discuss more.
+          </p>
+        </div>
+        <div class="message__log-in message">
+          <p>
+            Could you send over some <br />
+            pictures of your dog, please?
+          </p>
+        </div>
+        <div class="message__log-out message images">
+          <div class="messages__log-img">
+            <img class="log-img" src="assets/images/dog-image-1.jpg" alt="" />
+            <img class="log-img" src="assets/images/dog-image-2.jpg" alt="" />
+            <img class="log-img" src="assets/images/dog-image-3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="message__log-out message">
+          <p>
+            Here are a few pictures. She’s <br />
+            a happy girl!
+          </p>
+        </div>
+        <div class="message__log-out message">
+          <p>Can you make it?</p>
+        </div>
+        <div class="message__log-in message">
+          <p>
+            She looks so happy! The time <br />
+            we discussed works. How <br />
+            long shall I take her out for?
+          </p>
+        </div>
+        <div class="message__log-in message button-option">
+          <i class="far fa-circle button-icon"></i>
+          <p>30 minute walk</p>
+          <p class="highlight">$29</p>
+        </div>
+        <div class="message__log-in message button-option">
+          <i class="far fa-circle button-icon"></i>
+          <p>1 hour walk</p>
+          <p class="highlight">$49</p>
+        </div>
+      </div>
+      <div class="message__input">
+        <div class="message__input-box">
+          <div>
+            <p class="message-text">Type a message…</p>
+          </div>
+          <div class="message-button">
+            <i class="fas fa-angle-right button-icon"></i>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section class="text__container">
+    <!-- <section class="text__container">
         <h2 class="text__container-title">Simple booking</h2>
         <p class="text__container-info">
           Stay in touch with our dog walkers through the chat interface. This
@@ -134,6 +136,6 @@
           >Frontend Mentor</a
         >. Coded by <a href="#">Johnnatan Villaneda</a>.
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

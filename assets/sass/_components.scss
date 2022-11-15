@@ -1,0 +1,68 @@
+$sub-heading: hsl(276, 100%, 81%);
+$chat-left: hsl(276, 55%, 52%);
+$chat-right: hsl(271, 15%, 43%);
+$placeholder-text: hsl(206, 6%, 79%);
+$main-heading: hsl(271, 36%, 24%);
+$paragraph: hsl(270, 7%, 64%);
+
+$background-colors: linear-gradient(
+  90deg,
+  hsl(264, 100%, 61%) 25%,
+  hsl(293, 100%, 63%) 75%
+);
+
+.cellphone {
+  width: 245px;
+  height: 503px;
+  padding: 11px 10px;
+  border-radius: 25px;
+
+  .contact {
+    background: linear-gradient(90deg, #8838ff 25%, #e942ff 75%);
+    position: relative;
+    width: 100%;
+    padding: 0 15px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    border-radius: 25px 25px 0 0;
+    .white-block {
+      position: absolute;
+      width: 129px;
+      height: 18px;
+      background-color: white;
+      top: 0;
+      left: 50%;
+      translate: -50%;
+      border-radius: 0 0 25px 25px;
+    }
+    .return {
+      i {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+    .avatar {
+      img {
+        width: 26px;
+        border: 2px solid white;
+        border-radius: 100%;
+      }
+    }
+    .user-data {
+      h2 {
+        color: #fff;
+        margin: 0;
+        font-size: 0.82rem;
+      }
+      p {
+        color: $sub-heading;
+        margin: 0;
+        font-size: 0.52rem;
+      }
+    }
+    .setings {
+      color: #fff;
+    }
+  }
+}
