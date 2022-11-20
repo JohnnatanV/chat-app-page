@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 .cellphone {
@@ -12,7 +13,11 @@
   padding: 11px 10px;
   border-radius: 25px;
 }
-.cellphone .contact {
+.cellphone .app {
+  background-color: hsl(270deg, 20%, 96%);
+  border-radius: 25px;
+}
+.cellphone .app .contact {
   background: linear-gradient(90deg, #8838ff 25%, #e942ff 75%);
   position: relative;
   width: 100%;
@@ -21,7 +26,7 @@
   padding-bottom: 15px;
   border-radius: 25px 25px 7px 7px;
 }
-.cellphone .contact .white-block {
+.cellphone .app .contact .white-block {
   position: absolute;
   width: 129px;
   height: 18px;
@@ -31,31 +36,65 @@
   translate: -50%;
   border-radius: 0 0 50px 50px;
 }
-.cellphone .contact .return i {
+.cellphone .app .contact .return i {
   color: #fff;
   font-size: 20px;
   font-weight: 500;
 }
-.cellphone .contact .avatar img {
+.cellphone .app .contact .avatar img {
   width: 26px;
   border: 2px solid white;
   border-radius: 100%;
 }
-.cellphone .contact .user-data h2 {
+.cellphone .app .contact .user-data h2 {
   color: #fff;
   margin: 0;
   font-size: 0.82rem;
 }
-.cellphone .contact .user-data p {
+.cellphone .app .contact .user-data p {
   color: hsl(276deg, 100%, 81%);
   margin: 0;
   font-size: 0.52rem;
 }
-.cellphone .contact .setings {
+.cellphone .app .contact .setings {
   color: #fff;
 }
-.cellphone .messages-log {
-  padding: 0;
+.cellphone .app .messages-log {
+  position: relative;
+  border-radius: -25px -25px 0 0;
+  padding: 10px 7px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cellphone .app .messages-log .income-message {
+  max-width: 129px;
+  padding: 4px 7px;
+  margin: 0;
+  margin: 0.5rem;
+  background-color: hsl(206deg, 6%, 79%);
+  color: hsl(276deg, 55%, 52%);
+}
+.cellphone .app .messages-log .income-message p {
+  margin: 0;
+  font-size: 0.5rem;
+}
+.cellphone .app .messages-log .outcome-message {
+  max-width: 129px;
+  padding: 4px 7px;
+  margin: 0;
+  margin: 0.5rem;
+  align-self: flex-end;
+  background-color: #fff;
+  color: hsl(271deg, 15%, 43%);
+}
+.cellphone .app .messages-log .outcome-message p {
+  margin: 0;
+  font-size: 0.5rem;
+}
+.cellphone .app .messages-log .outcome-message .log-img {
+  width: 100%;
+  width: 2.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
