@@ -9,13 +9,15 @@
 
 .cellphone {
   width: 245px;
-  height: 503px;
+  height: 506px;
   padding: 11px 10px;
   border-radius: 25px;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1), 5px 5px 50px rgba(0, 0, 0, 0.05), 15px 15px 50px rgba(0, 0, 0, 0.05);
 }
 .cellphone .app {
   background-color: hsl(270deg, 20%, 96%);
   border-radius: 25px;
+  min-height: 95%;
 }
 .cellphone .app .contact {
   background: linear-gradient(90deg, #8838ff 25%, #e942ff 75%);
@@ -63,6 +65,7 @@
   position: relative;
   border-radius: -25px -25px 0 0;
   padding: 10px 7px;
+  padding-bottom: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -108,6 +111,50 @@
   max-width: fit-content;
   background: none;
   box-shadow: none;
+}
+.cellphone .app .messages-log .last-message {
+  margin-bottom: 0.9rem;
+}
+.cellphone .app .messages-log .btn-option {
+  background: linear-gradient(90deg, hsl(264deg, 100%, 61%) 25%, hsl(293deg, 100%, 63%) 75%);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.cellphone .app .messages-log .btn-option .bi-circle {
+  margin-right: 0.2rem;
+  color: hsl(206deg, 6%, 79%);
+}
+.cellphone .app .messages-log .btn-option p {
+  color: #fff;
+}
+.cellphone .app .messages-log .btn-option .highlight {
+  position: absolute;
+  right: 0.9rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+.cellphone .app .message-input {
+  padding: 0.5rem 0;
+  margin: 0;
+}
+.cellphone .app .message-input .message-input-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 3px;
+  background-color: #ccc;
+  border-radius: 100px;
+}
+.cellphone .app .message-input .message-input-box .message-text {
+  margin: 0;
+  font-size: 0.5rem;
+}
+.cellphone .app .message-input .message-input-box .message-btn i {
+  font-size: 0.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
