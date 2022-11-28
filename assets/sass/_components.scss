@@ -19,6 +19,12 @@ $background-colors: linear-gradient(
   hsl(293, 100%, 63%) 75%
 );
 
+$background-btn-option: linear-gradient(
+  270deg,
+  hsl(264, 100%, 61%) 25%,
+  hsl(293, 100%, 63%) 75%
+);
+
 // ### Secondary
 
 $app-background: hsl(270, 20%, 96%);
@@ -43,6 +49,18 @@ $bn-radio-outline: hsl(289, 100%, 72%);
 @mixin option {
   max-width: 160px;
   width: 100%;
+}
+
+.main-content {
+  .content-title {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: $main-heading;
+  }
+
+  .content-info {
+    color: $sub-heading;
+  }
 }
 
 .cellphone {
@@ -147,7 +165,7 @@ $bn-radio-outline: hsl(289, 100%, 72%);
 
       .btn-option {
         @include option();
-        background: $background-colors;
+        background: $background-btn-option;
         display: flex;
         align-items: center;
         position: relative;

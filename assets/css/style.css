@@ -7,6 +7,33 @@
   font-size: 16px;
 }
 
+html {
+  max-width: 1440px;
+  margin: auto;
+}
+
+main {
+  max-width: 936px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+footer {
+  width: 100%;
+  margin: auto;
+}
+
+.main-content .content-title {
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: hsl(271deg, 36%, 24%);
+}
+.main-content .content-info {
+  color: hsl(276deg, 100%, 81%);
+}
+
 .cellphone {
   width: 245px;
   height: 506px;
@@ -120,7 +147,7 @@
 .cellphone .app .messages-log .btn-option {
   max-width: 160px;
   width: 100%;
-  background: linear-gradient(90deg, hsl(264deg, 100%, 61%) 25%, hsl(293deg, 100%, 63%) 75%);
+  background: linear-gradient(270deg, hsl(264deg, 100%, 61%) 25%, hsl(293deg, 100%, 63%) 75%);
   display: flex;
   align-items: center;
   position: relative;

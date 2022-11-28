@@ -39,93 +39,96 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <section class="cellphone">
-      <div class="app">
-        <div class="contact container d-flex justify-content-between">
-          <div class="white-block"></div>
-          <div class="d-flex align-items-center gap-1">
-            <span class="return">
-              <i class="bi bi-chevron-compact-left"></i>
-            </span>
-            <div class="avatar">
-              <img src="assets/images/avatar.jpg" alt="avatar image" />
+    <main>
+      <section class="container">
+        <div class="cellphone">
+          <div class="app">
+            <div class="contact container d-flex justify-content-between">
+              <div class="white-block"></div>
+              <div class="d-flex align-items-center gap-1">
+                <span class="return">
+                  <i class="bi bi-chevron-compact-left"></i>
+                </span>
+                <div class="avatar">
+                  <img src="assets/images/avatar.jpg" alt="avatar image" />
+                </div>
+                <div
+                  class="user-data d-flex flex-column align-items-start justify-content-center"
+                >
+                  <h2 class="title">Samuel Green</h2>
+                  <p class="status">Available to Walk</p>
+                </div>
+              </div>
+              <div class="setings col-auto">
+                <i class="bi bi-three-dots-vertical"></i>
+              </div>
             </div>
-            <div
-              class="user-data d-flex flex-column align-items-start justify-content-center"
-            >
-              <h2 class="title">Samuel Green</h2>
-              <p class="status">Available to Walk</p>
+            <div class="messages-log">
+              <div class="income-message">
+                <p>That sounds great. I’d be happy to discuss more.</p>
+              </div>
+              <div class="income-message last-message">
+                <p>Could you send over some pictures of your dog, please?</p>
+              </div>
+              <div
+                class="outcome-message img-message container d-flex flex-row gap-3"
+              >
+                <img
+                  class="log-img rounded-3 img-fluid"
+                  src="assets/images/dog-image-1.jpg"
+                  alt=""
+                />
+                <img
+                  class="log-img rounded-3 img-fluid"
+                  src="assets/images/dog-image-2.jpg"
+                  alt=""
+                />
+                <img
+                  class="log-img rounded-3 img-fluid"
+                  src="assets/images/dog-image-3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="outcome-message message">
+                <p>Here are a few pictures. She’s a happy girl!</p>
+              </div>
+              <div class="outcome-message message last-message">
+                <p>Can you make it?</p>
+              </div>
+              <div class="income-message message">
+                <p>
+                  She looks so happy! The time we discussed works. How long
+                  shall I take her out for?
+                </p>
+              </div>
+              <div class="income-message btn-option">
+                <i class="bi bi-circle"></i>
+                <p>30 minute walk</p>
+                <p class="highlight">$29</p>
+              </div>
+              <div class="income-message btn-option">
+                <i class="bi bi-circle"></i>
+                <p>1 hour walk</p>
+                <p class="highlight">$49</p>
+              </div>
             </div>
-          </div>
-          <div class="setings col-auto">
-            <i class="bi bi-three-dots-vertical"></i>
+            <div class="message-input">
+              <div class="message-input-box">
+                <div>
+                  <p class="message-text">Type a message…</p>
+                </div>
+                <div class="message-btn">
+                  <i class="bi bi-chevron-right"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="messages-log">
-          <div class="income-message">
-            <p>That sounds great. I’d be happy to discuss more.</p>
-          </div>
-          <div class="income-message last-message">
-            <p>Could you send over some pictures of your dog, please?</p>
-          </div>
-          <div
-            class="outcome-message img-message container d-flex flex-row gap-3"
-          >
-            <img
-              class="log-img rounded-3 img-fluid"
-              src="assets/images/dog-image-1.jpg"
-              alt=""
-            />
-            <img
-              class="log-img rounded-3 img-fluid"
-              src="assets/images/dog-image-2.jpg"
-              alt=""
-            />
-            <img
-              class="log-img rounded-3 img-fluid"
-              src="assets/images/dog-image-3.jpg"
-              alt=""
-            />
-          </div>
-          <div class="outcome-message message">
-            <p>Here are a few pictures. She’s a happy girl!</p>
-          </div>
-          <div class="outcome-message message last-message">
-            <p>Can you make it?</p>
-          </div>
-          <div class="income-message message">
-            <p>
-              She looks so happy! The time we discussed works. How long shall I
-              take her out for?
-            </p>
-          </div>
-          <div class="income-message btn-option">
-            <i class="bi bi-circle"></i>
-            <p>30 minute walk</p>
-            <p class="highlight">$29</p>
-          </div>
-          <div class="income-message btn-option">
-            <i class="bi bi-circle"></i>
-            <p>1 hour walk</p>
-            <p class="highlight">$49</p>
-          </div>
-        </div>
-        <div class="message-input">
-          <div class="message-input-box">
-            <div>
-              <p class="message-text">Type a message…</p>
-            </div>
-            <div class="message-btn">
-              <i class="bi bi-chevron-right"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- <section class="text__container">
-        <h2 class="text__container-title">Simple booking</h2>
-        <p class="text__container-info">
+      <section class="container main-content">
+        <h2 class="content-title">Simple booking</h2>
+        <p class="content-info">
           Stay in touch with our dog walkers through the chat interface. This
           makes it easy to discuss arrangements and make bookings. Once the walk
           has been completed you can rate your walker and book again all through
@@ -140,6 +143,6 @@
           >Frontend Mentor</a
         >. Coded by <a href="#">Johnnatan Villaneda</a>.
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>
