@@ -1,30 +1,3 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-html {
-  max-width: 1440px;
-  margin: auto;
-}
-
-main {
-  max-width: 936px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-}
-
-footer {
-  width: 100%;
-  margin: auto;
-}
-
 .main-content .content-title {
   font-size: 2.3rem;
   font-weight: 600;
@@ -40,6 +13,7 @@ footer {
   padding: 11px 10px;
   border-radius: 25px;
   box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1), 5px 5px 50px rgba(0, 0, 0, 0.05), 15px 15px 50px rgba(0, 0, 0, 0.05);
+  z-index: 10;
 }
 .cellphone .app {
   background-color: hsl(270deg, 20%, 96%);
@@ -200,6 +174,239 @@ footer {
   font-size: 0.3rem;
   font-weight: 800;
   color: hsl(206deg, 6%, 79%);
+}
+
+.block {
+  position: absolute;
+  height: 700px;
+  width: 508px;
+  left: 0;
+  top: 0;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main-content .content-title {
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: hsl(271deg, 36%, 24%);
+}
+.main-content .content-info {
+  color: hsl(276deg, 100%, 81%);
+}
+
+.cellphone {
+  width: 245px;
+  height: 506px;
+  padding: 11px 10px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1), 5px 5px 50px rgba(0, 0, 0, 0.05), 15px 15px 50px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+}
+.cellphone .app {
+  background-color: hsl(270deg, 20%, 96%);
+  border-radius: 25px;
+  min-height: 95%;
+}
+.cellphone .app .contact {
+  background: linear-gradient(90deg, #8838ff 25%, #e942ff 75%);
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  border-radius: 25px 25px 7px 7px;
+}
+.cellphone .app .contact .white-block {
+  position: absolute;
+  width: 129px;
+  height: 18px;
+  background-color: white;
+  top: 0;
+  left: 50%;
+  translate: -50%;
+  border-radius: 0 0 50px 50px;
+}
+.cellphone .app .contact .return i {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.cellphone .app .contact .avatar img {
+  width: 26px;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+.cellphone .app .contact .user-data h2 {
+  color: #fff;
+  margin: 0;
+  font-size: 0.82rem;
+}
+.cellphone .app .contact .user-data p {
+  color: hsl(276deg, 100%, 81%);
+  margin: 0;
+  font-size: 0.52rem;
+}
+.cellphone .app .contact .setings {
+  color: #fff;
+}
+.cellphone .app .messages-log {
+  position: relative;
+  border-radius: -25px -25px 0 0;
+  padding: 10px 7px;
+  padding-bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cellphone .app .messages-log .income-message {
+  max-width: 8rem;
+  width: 100%;
+  padding: 4px 7px;
+  margin: 0;
+  margin: 0.25rem 0.5rem;
+  display: flex;
+  box-shadow: 0 3px 15px #ececec;
+  border-radius: 8px;
+  background-color: hsl(206deg, 6%, 79%);
+  color: hsl(276deg, 55%, 52%);
+  border-bottom-left-radius: 3px;
+}
+.cellphone .app .messages-log .income-message p {
+  margin: 0;
+  font-size: 0.5rem;
+}
+.cellphone .app .messages-log .outcome-message {
+  max-width: 8rem;
+  width: 100%;
+  padding: 4px 7px;
+  margin: 0;
+  margin: 0.25rem 0.5rem;
+  display: flex;
+  box-shadow: 0 3px 15px #ececec;
+  border-radius: 8px;
+  align-self: flex-end;
+  background-color: #fff;
+  color: hsl(271deg, 15%, 43%);
+  border-bottom-right-radius: 3px;
+}
+.cellphone .app .messages-log .outcome-message p {
+  margin: 0;
+  font-size: 0.5rem;
+}
+.cellphone .app .messages-log .outcome-message .log-img {
+  width: 100%;
+  width: 2.6rem;
+}
+.cellphone .app .messages-log .img-message {
+  max-width: fit-content;
+  background: none;
+  box-shadow: none;
+}
+.cellphone .app .messages-log .last-message {
+  margin-bottom: 0.9rem;
+}
+.cellphone .app .messages-log .btn-option {
+  max-width: 160px;
+  width: 100%;
+  background: linear-gradient(270deg, hsl(264deg, 100%, 61%) 25%, hsl(293deg, 100%, 63%) 75%);
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 160px;
+}
+.cellphone .app .messages-log .btn-option .bi-circle {
+  margin-right: 0.2rem;
+  color: hsl(206deg, 6%, 79%);
+}
+.cellphone .app .messages-log .btn-option p {
+  color: #fff;
+}
+.cellphone .app .messages-log .btn-option .highlight {
+  position: absolute;
+  right: 0.9rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+.cellphone .app .message-input {
+  padding: 0.5rem 0;
+  margin: 0;
+}
+.cellphone .app .message-input .message-input-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 0.2rem 0.3rem;
+  padding-left: 1.1rem;
+  background-color: #fff;
+  border-radius: 100px;
+}
+.cellphone .app .message-input .message-input-box .message-text {
+  margin: 0;
+  font-size: 0.6rem;
+  color: hsl(206deg, 6%, 79%);
+}
+.cellphone .app .message-input .message-input-box .message-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(271deg, 36%, 24%);
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+}
+.cellphone .app .message-input .message-input-box .message-btn i {
+  font-size: 0.3rem;
+  font-weight: 800;
+  color: hsl(206deg, 6%, 79%);
+}
+
+.block {
+  position: absolute;
+  height: 700px;
+  width: 508px;
+  left: 0;
+  top: 0;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  max-width: 1440px;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  background-color: hsl(270deg, 20%, 96%);
+}
+
+main {
+  max-width: 936px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
