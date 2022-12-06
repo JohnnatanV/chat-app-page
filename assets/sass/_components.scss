@@ -14,15 +14,15 @@ $paragraph: hsl(270, 7%, 64%);
 // #### Gradients
 
 $background-colors: linear-gradient(
-  90deg,
-  hsl(264, 100%, 61%) 25%,
-  hsl(293, 100%, 63%) 75%
+  270deg,
+  rgba(233, 66, 255, 1) 10%,
+  rgba(136, 56, 255, 1) 85%
 );
 
 $background-btn-option: linear-gradient(
-  270deg,
-  hsl(264, 100%, 61%) 25%,
-  hsl(293, 100%, 63%) 75%
+  90deg,
+  rgba(233, 66, 255, 1) 15%,
+  rgba(136, 56, 255, 1) 75%
 );
 
 // ### Secondary
@@ -66,17 +66,18 @@ $bn-radio-outline: hsl(289, 100%, 72%);
 .cellphone {
   width: 245px;
   height: 506px;
+  z-index: 100;
   padding: 11px 10px;
   border-radius: 25px;
+  background-color: #fff;
   box-shadow: 10px 10px 50px rgba(#000000, 0.1),
     5px 5px 50px rgba(#000000, 0.05), 15px 15px 50px rgba(#000000, 0.05);
-  z-index: 10;
   .app {
     background-color: $app-background;
     border-radius: 25px;
     min-height: 95%;
     .contact {
-      background: linear-gradient(90deg, #8838ff 25%, #e942ff 75%);
+      background: $background-colors;
       position: relative;
       width: 100%;
       padding: 0 15px;
@@ -225,15 +226,4 @@ $bn-radio-outline: hsl(289, 100%, 72%);
       }
     }
   }
-}
-
-.block {
-  position: absolute;
-  height: 700px;
-  width: 508px;
-  left: 0;
-  top: 0;
-  border-bottom-left-radius: 45%;
-  border-bottom-right-radius: 45%;
-  background-color: #00000099;
 }

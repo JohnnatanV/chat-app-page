@@ -10,10 +10,11 @@
 .cellphone {
   width: 245px;
   height: 506px;
+  z-index: 100;
   padding: 11px 10px;
   border-radius: 25px;
+  background-color: #fff;
   box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1), 5px 5px 50px rgba(0, 0, 0, 0.05), 15px 15px 50px rgba(0, 0, 0, 0.05);
-  z-index: 10;
 }
 .cellphone .app {
   background-color: hsl(270deg, 20%, 96%);
@@ -21,7 +22,7 @@
   min-height: 95%;
 }
 .cellphone .app .contact {
-  background: linear-gradient(90deg, #8838ff 25%, #e942ff 75%);
+  background: linear-gradient(270deg, rgb(233, 66, 255) 10%, rgb(136, 56, 255) 85%);
   position: relative;
   width: 100%;
   padding: 0 15px;
@@ -121,7 +122,7 @@
 .cellphone .app .messages-log .btn-option {
   max-width: 160px;
   width: 100%;
-  background: linear-gradient(270deg, hsl(264deg, 100%, 61%) 25%, hsl(293deg, 100%, 63%) 75%);
+  background: linear-gradient(90deg, rgb(233, 66, 255) 15%, rgb(136, 56, 255) 75%);
   display: flex;
   align-items: center;
   position: relative;
@@ -174,17 +175,6 @@
   font-size: 0.3rem;
   font-weight: 800;
   color: hsl(206deg, 6%, 79%);
-}
-
-.block {
-  position: absolute;
-  height: 700px;
-  width: 508px;
-  left: 0;
-  top: 0;
-  border-bottom-left-radius: 45%;
-  border-bottom-right-radius: 45%;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .main-content .content-title {
@@ -199,10 +189,11 @@
 .cellphone {
   width: 245px;
   height: 506px;
+  z-index: 100;
   padding: 11px 10px;
   border-radius: 25px;
+  background-color: #fff;
   box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1), 5px 5px 50px rgba(0, 0, 0, 0.05), 15px 15px 50px rgba(0, 0, 0, 0.05);
-  z-index: 10;
 }
 .cellphone .app {
   background-color: hsl(270deg, 20%, 96%);
@@ -210,7 +201,7 @@
   min-height: 95%;
 }
 .cellphone .app .contact {
-  background: linear-gradient(90deg, #8838ff 25%, #e942ff 75%);
+  background: linear-gradient(270deg, rgb(233, 66, 255) 10%, rgb(136, 56, 255) 85%);
   position: relative;
   width: 100%;
   padding: 0 15px;
@@ -310,7 +301,7 @@
 .cellphone .app .messages-log .btn-option {
   max-width: 160px;
   width: 100%;
-  background: linear-gradient(270deg, hsl(264deg, 100%, 61%) 25%, hsl(293deg, 100%, 63%) 75%);
+  background: linear-gradient(90deg, rgb(233, 66, 255) 15%, rgb(136, 56, 255) 75%);
   display: flex;
   align-items: center;
   position: relative;
@@ -363,17 +354,6 @@
   font-size: 0.3rem;
   font-weight: 800;
   color: hsl(206deg, 6%, 79%);
-}
-
-.block {
-  position: absolute;
-  height: 700px;
-  width: 508px;
-  left: 0;
-  top: 0;
-  border-bottom-left-radius: 45%;
-  border-bottom-right-radius: 45%;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 *,
@@ -393,12 +373,25 @@ body {
   background-color: hsl(270deg, 20%, 96%);
 }
 
+.block {
+  z-index: 1;
+  position: absolute;
+  height: 750px;
+  width: 500px;
+  left: -230px;
+  top: 0;
+  border-radius: 0px 0px 400px 400px;
+  background: rgb(136, 56, 255);
+  background: linear-gradient(230deg, rgba(233, 66, 255, 0.8) 2%, rgb(136, 56, 255) 75%);
+}
+
 main {
   max-width: 936px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
+  z-index: 10;
 }
 
 footer {
