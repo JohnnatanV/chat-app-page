@@ -81,7 +81,7 @@
   display: flex;
   box-shadow: 0 3px 15px #ececec;
   border-radius: 8px;
-  background-color: hsl(206deg, 6%, 79%);
+  background-color: hsl(272deg, 41%, 93%);
   color: hsl(276deg, 55%, 52%);
   border-bottom-left-radius: 3px;
 }
@@ -260,7 +260,7 @@
   display: flex;
   box-shadow: 0 3px 15px #ececec;
   border-radius: 8px;
-  background-color: hsl(206deg, 6%, 79%);
+  background-color: hsl(272deg, 41%, 93%);
   color: hsl(276deg, 55%, 52%);
   border-bottom-left-radius: 3px;
 }
@@ -376,9 +376,9 @@ body {
 .block {
   z-index: 1;
   position: absolute;
-  height: 750px;
-  width: 500px;
-  left: -230px;
+  height: 46.875rem;
+  width: 31.25rem;
+  left: -14.375rem;
   top: 0;
   border-radius: 0px 0px 400px 400px;
   background: rgb(136, 56, 255);
@@ -400,6 +400,14 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .block {
+    height: 36rem;
+    width: 21.25rem;
+    left: -10rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

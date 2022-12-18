@@ -20,9 +20,9 @@ body {
 .block {
   z-index: 1;
   position: absolute;
-  height: 750px;
-  width: 500px;
-  left: -230px;
+  height: 46.875rem;
+  width: 31.25rem;
+  left: -14.375rem;
   // left: 0;
   top: 0;
   border-radius: 0px 0px 400px 400px;
@@ -49,4 +49,12 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .block {
+    height: 36rem;
+    width: 21.25rem;
+    left: -10rem;
+  }
 }
