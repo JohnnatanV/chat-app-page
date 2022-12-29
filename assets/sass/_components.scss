@@ -232,3 +232,34 @@ $bn-radio-outline: hsl(289, 100%, 72%);
     }
   }
 }
+
+.block {
+  z-index: 1;
+  position: absolute;
+  height: 46.875rem;
+  width: 31.25rem;
+}
+
+.block-1 {
+  left: -14.375rem;
+  top: 0;
+  border-radius: 0px 0px 400px 400px;
+  background: rgba(136, 56, 255, 1);
+  background: linear-gradient(
+    230deg,
+    rgba(233, 66, 255, 0.8) 2%,
+    rgba(136, 56, 255, 1) 75%
+  );
+}
+
+.block-2 {
+  right: -14.375rem;
+  bottom: 0;
+  border-radius: 400px 400px 0px 0px;
+  background: rgba(136, 56, 255, 0.1);
+  background: linear-gradient(
+    230deg,
+    rgba(233, 66, 255, 0.03) 2%,
+    rgba(136, 56, 255, 0.03) 75%
+  );
+}

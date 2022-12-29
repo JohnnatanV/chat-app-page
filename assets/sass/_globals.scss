@@ -17,23 +17,6 @@ body {
   background-color: $app-background;
 }
 
-.block {
-  z-index: 1;
-  position: absolute;
-  height: 46.875rem;
-  width: 31.25rem;
-  left: -14.375rem;
-  // left: 0;
-  top: 0;
-  border-radius: 0px 0px 400px 400px;
-  background: rgba(136, 56, 255, 1);
-  background: linear-gradient(
-    230deg,
-    rgba(233, 66, 255, 0.8) 2%,
-    rgba(136, 56, 255, 1) 75%
-  );
-}
-
 main {
   max-width: 936px;
   display: flex;
@@ -55,6 +38,13 @@ footer {
   .block {
     height: 36rem;
     width: 21.25rem;
+  }
+
+  .block-1 {
     left: -10rem;
+  }
+
+  .block-2 {
+    right: -10rem;
   }
 }
