@@ -456,6 +456,9 @@ footer {
   .content-info {
     text-align: center;
   }
+  footer {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
