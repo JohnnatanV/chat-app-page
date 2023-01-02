@@ -448,5 +448,14 @@ footer {
     right: -10rem;
   }
 }
+@media (max-width: 767px) {
+  .main-content {
+    margin-top: 4.5rem;
+  }
+  .content-title,
+  .content-info {
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
